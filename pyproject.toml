@@ -1,0 +1,16 @@
+[project]
+name = "babeldoc-webui"
+version = "0.1.0"
+description = "A modern web UI for BabelDOC - PDF document translation tool"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "nicegui>=2.0.0",
+    "babeldoc>=0.5.0",
+]
+
+[project.scripts]
+babeldoc-webui = "main:run"
+
+[tool.uv.sources]
+babeldoc = { path = "BabelDOC", editable = true }
